@@ -1,0 +1,31 @@
+# Development overrides - automatically loaded with docker-compose
+version: '3.9'
+
+services:
+  web:
+    environment:
+      - DJANGO_SETTINGS_MODULE=config.settings.development
+      - DEBUG=True
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+
+  bot:
+    environment:
+      - DJANGO_SETTINGS_MODULE=config.settings.development
+    volumes:
+      - .:/app
+
+  celery:
+    environment:
+      - DJANGO_SETTINGS_MODULE=config.settings.development
+    volumes:
+      - .:/app
+
+  celery-beat:
+    environment:
+      - DJANGO_SETTINGS_MODULE=config.settings.development
+    volumes:
+      - .:/app

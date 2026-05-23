@@ -1,0 +1,160 @@
+[
+  {
+    "model": "education.subject",
+    "pk": 1,
+    "fields": {
+      "code": "math",
+      "name_uz": "Matematika",
+      "name_ru": "Математика",
+      "name_en": "Mathematics",
+      "emoji": "🔢",
+      "description": "Algebra, geometry, calculus and more",
+      "is_active": true,
+      "order": 1
+    }
+  },
+  {
+    "model": "education.subject",
+    "pk": 2,
+    "fields": {
+      "code": "english",
+      "name_uz": "Ingliz tili",
+      "name_ru": "Английский язык",
+      "name_en": "English",
+      "emoji": "🇬🇧",
+      "description": "Grammar, vocabulary, reading, writing",
+      "is_active": true,
+      "order": 2
+    }
+  },
+  {
+    "model": "education.subject",
+    "pk": 3,
+    "fields": {
+      "code": "physics",
+      "name_uz": "Fizika",
+      "name_ru": "Физика",
+      "name_en": "Physics",
+      "emoji": "⚡",
+      "description": "Mechanics, thermodynamics, electricity",
+      "is_active": true,
+      "order": 3
+    }
+  },
+  {
+    "model": "education.subject",
+    "pk": 4,
+    "fields": {
+      "code": "chemistry",
+      "name_uz": "Kimyo",
+      "name_ru": "Химия",
+      "name_en": "Chemistry",
+      "emoji": "🧪",
+      "description": "Organic, inorganic, analytical chemistry",
+      "is_active": true,
+      "order": 4
+    }
+  },
+  {
+    "model": "education.subject",
+    "pk": 5,
+    "fields": {
+      "code": "biology",
+      "name_uz": "Biologiya",
+      "name_ru": "Биология",
+      "name_en": "Biology",
+      "emoji": "🧬",
+      "description": "Cell biology, genetics, ecology",
+      "is_active": true,
+      "order": 5
+    }
+  },
+  {
+    "model": "education.subject",
+    "pk": 6,
+    "fields": {
+      "code": "history",
+      "name_uz": "Tarix",
+      "name_ru": "История",
+      "name_en": "History",
+      "emoji": "📜",
+      "description": "World history, Uzbekistan history",
+      "is_active": true,
+      "order": 6
+    }
+  },
+  {
+    "model": "education.subject",
+    "pk": 7,
+    "fields": {
+      "code": "it",
+      "name_uz": "Informatika",
+      "name_ru": "Информатика",
+      "name_en": "Information Technology",
+      "emoji": "💻",
+      "description": "Programming, algorithms, databases",
+      "is_active": true,
+      "order": 7
+    }
+  },
+  {
+    "model": "education.subject",
+    "pk": 8,
+    "fields": {
+      "code": "ielts",
+      "name_uz": "IELTS",
+      "name_ru": "IELTS",
+      "name_en": "IELTS",
+      "emoji": "📝",
+      "description": "Listening, Reading, Writing, Speaking",
+      "is_active": true,
+      "order": 8
+    }
+  },
+  {
+    "model": "education.subject",
+    "pk": 9,
+    "fields": {
+      "code": "sat",
+      "name_uz": "SAT",
+      "name_ru": "SAT",
+      "name_en": "SAT",
+      "emoji": "🎯",
+      "description": "Math, Evidence-Based Reading and Writing",
+      "is_active": true,
+      "order": 9
+    }
+  },
+  {
+    "model": "payments.premiumplan",
+    "pk": 1,
+    "fields": {
+      "name": "Monthly Premium",
+      "plan_type": "monthly",
+      "price_usd": "9.99",
+      "price_uzs": "125000.00",
+      "duration_days": 30,
+      "description_uz": "Oylik premium obuna",
+      "description_ru": "Ежемесячная подписка",
+      "description_en": "Monthly premium subscription",
+      "features": ["Unlimited AI requests", "Mock Exams", "Advanced Analytics", "VIP Universities"],
+      "is_active": true
+    }
+  },
+  {
+    "model": "payments.premiumplan",
+    "pk": 2,
+    "fields": {
+      "name": "Yearly Premium",
+      "plan_type": "yearly",
+      "price_usd": "79.99",
+      "price_uzs": "999000.00",
+      "duration_days": 365,
+      "description_uz": "Yillik premium obuna (4 oy bepul!)",
+      "description_ru": "Годовая подписка (4 месяца бесплатно!)",
+      "description_en": "Yearly premium subscription (4 months free!)",
+      "features": ["All Monthly Features", "4 Months Free", "Personal Study Plan", "Priority Support"],
+      "is_active": true
+    }
+  }
+]
