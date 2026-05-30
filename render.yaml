@@ -4,18 +4,3 @@ services:
     env: python
     buildCommand: pip install -r requirements.txt && python manage.py migrate
     startCommand: python bot/main.py
-    envVars:
-      - key: DJANGO_SETTINGS_MODULE
-        value: config.settings.local
-      - key: USE_SQLITE
-        value: "true"
-      - key: USE_MEMORY_CACHE
-        value: "true"
-      - key: CELERY_EAGER
-        value: "true"
-      - key: SECRET_KEY
-        value: abt-secret-key-2026
-      - key: TELEGRAM_BOT_TOKEN
-        sync: false
-      - key: GROQ_API_KEY
-        sync: false

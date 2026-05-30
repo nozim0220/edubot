@@ -204,8 +204,8 @@ async def btn_admin(msg: Message, user, **kw):
     if not (user.is_admin or user.is_staff):
         await msg.answer("❌ Sizda admin huquqi yo'q!")
         return
-    from bot.handlers.admin import _show_panel
-    await _show_panel(msg, send=True)
+    from bot.handlers.admin import admin_panel
+    await admin_panel(msg, user)
 
 
 # ── ONBOARDING ───────────────────────────────────────
