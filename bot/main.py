@@ -7,6 +7,12 @@ if BASE_DIR not in sys.path:
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings.local')
 import django; django.setup()
+# Migration avtomatik
+from django.core.management import call_command
+try:
+    call_command('migrate', '--run-syncdb', verbosity=0)
+except Exception as e:
+    print(f"Migrate: {e}")
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s')
 logger = logging.getLogger('bot')
