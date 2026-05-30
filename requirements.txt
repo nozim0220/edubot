@@ -28,6 +28,7 @@ django-environ==0.13.0
 django-timezone-field==7.2.1
 django_celery_results==2.6.0
 djangorestframework==3.17.1
+djangorestframework_simplejwt==5.5.1
 dotenv==0.9.9
 fastapi==0.136.1
 frozenlist==1.8.0
@@ -50,6 +51,7 @@ prompt_toolkit==3.0.52
 propcache==0.5.2
 pydantic==2.13.4
 pydantic_core==2.46.4
+PyJWT==2.13.0
 python-crontab==3.3.0
 python-dateutil==2.9.0.post0
 python-dotenv==1.2.2
